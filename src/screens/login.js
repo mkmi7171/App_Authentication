@@ -48,6 +48,15 @@ export default function Login({navigation}) {
         }}>
         6 digits code sent to your phone
       </Text>
+            <Text
+        style={{
+          fontFamily: 'Montserrat-Medium',
+          fontSize: 12,
+          margin: 10,
+          marginTop: 10,
+        }}>
+        Ex: 09197410117
+      </Text>
       <View style={styles.inner}>
         <View style={{width: '60%', marginRight: 10}}>
           <TextInput
@@ -60,9 +69,6 @@ export default function Login({navigation}) {
             keyboardType="number-pad"
             maxLength={11}
           />
-          <HelperText type="error" visible={hasErrors()}>
-            incorrect
-          </HelperText>
         </View>
         <Button
           text={'send'}
