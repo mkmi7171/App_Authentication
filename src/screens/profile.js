@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { View, Text, Image, TextInput, StyleSheet, TouchableOpacity, Alert } from 'react-native';
-import Lottie from 'lottie-react-native';
+// import Lottie from 'lottie-react-native';npm u
 import AuthContext from '../store/AuthContext';
 import axios from 'axios'
 
@@ -35,10 +35,10 @@ const EditProfileView = () => {
     return (
         <View style={styles.container}>
             <View style={styles.avatarContainer}>
-                <Lottie
+                {/* <Lottie
                     source={require('../../assets/avatar.json')}
                     style={{ width: '40%' }}
-                />
+                /> */}
             </View>
             <View style={styles.form}>
                 <Text style={styles.label}>FirstName</Text>

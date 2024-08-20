@@ -3,7 +3,7 @@ import {SafeAreaView, Text, Pressable, Keyboard} from 'react-native';
 import Otp from '../components/otp';
 import Button from '../ui/Button';
 import {AuthContext} from '../store/AuthContext';
-import axios from 'axios';
+// import axios from 'axios';
 
 export default function Code({navigation}) {
   const [otpCode, setOTPCode] = useState('');
@@ -12,7 +12,7 @@ export default function Code({navigation}) {
   const {user} = useContext(AuthContext);
 
   const handleSubmitOTP = async () => {
-    navigation.navigate('Profile');
+    Alert.alert('okay')
     // const config = {
     //     headers: { Authorization: `Bearer ${user}` }
     // };
